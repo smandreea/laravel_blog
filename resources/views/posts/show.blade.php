@@ -7,6 +7,7 @@
     
     <h1 class="mt-3">{{$post->title}}</h1>
     <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
+    <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%"/>
     <div>
         <p>{!!$post->body!!}</p>
     </div>
